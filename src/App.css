@@ -2,13 +2,20 @@
   text-align: left;
 }
 
-.key-container{
+.key-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 30%;
 }
 
-.screen{
+.screen {
+  height: 60px;
   width: 30%;
   margin: 10px;
+  font-size: 40px;
+}
+
+.key {
+  height: 70px;
+  font-size: 50px;
 }
