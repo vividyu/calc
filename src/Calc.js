@@ -24,7 +24,8 @@ function Calc() {
                 setCurOperator("");
                 break;
             case "+":
-                setCurOperator(item);
+                const sum = result + display;
+                setDisplay(sum);
                 break;
             case "-":
                 setCurOperator(item);
@@ -39,6 +40,7 @@ function Calc() {
                 setCurOperator(item);
                 break;
             default:
+                setResult(0);
                 setDisplay(item);
                 break;
         }
