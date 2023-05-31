@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 function Calc() {
     const [display, setDisplay] = useState(0);
-    const [result, setResult] = useState(0);
-    const [curOperator, setCurOperator] = useState("");
+    const [preVal, setPreVal] = useState(0);
+    const [curVal, setCurVal] = useState(0);
+    const [inProcess, setInProcess] = useState(false);
 
     let initKeys = [];
     initKeys.push("AC");
@@ -44,7 +45,6 @@ function Calc() {
                 setDisplay(item);
                 break;
         }
-
     }
 
     return (
